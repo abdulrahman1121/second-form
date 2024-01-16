@@ -34,7 +34,7 @@ const checkInputs = () => {
 
     if(emailValue === ''){
         setErrorFor(email, 'Email cant be blank');
-    }else if(isEmail(emailValue)){
+    }else if(!isEmail(emailValue)){
         setErrorFor(email, 'Email is not valid');
     }else{
         setSuccessFor(email);
